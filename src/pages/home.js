@@ -1,7 +1,7 @@
 import React from "react";
-import trending from "../assets/mocks/trending";
+
 import { MasonryPost, PostMasonry, PostGrid } from "../components/common";
-import featured from "../assets/mocks/featured";
+
 
 
 const trendingConfig = {
@@ -25,18 +25,6 @@ const featuredConfig = {
         width: '500px',
         
     }
-    // 0: {
-    //     gridArea: '1 / 1 / 2 / 3',
-    //     height: '300px'
-    // },
-    // 1: {
-    //     height: '300px'
-    // },
-    // 3: {
-    //     height: '630px',
-    //     marginLeft: '30px',
-    //     width: '630px',
-    // }
 }
 
 const mergeStyle = function (posts, config) {
@@ -59,6 +47,7 @@ const lastFeatured = featured.pop()
 export default function Home() {
     return (
         <main className="home">
+
             <section className="container">
                 <div className="row">
                     {/* <h1>Featured Posts</h1> */}
