@@ -1,0 +1,39 @@
+.post-viewer-container {
+    position: relative;
+    background: white;
+
+    .ql-toolbar {
+        display: none;
+    }
+
+    .ql-container {
+        border: none;
+
+        .ql-editor {
+            padding: 0;
+        }
+
+        h2, h3, h4, p {
+            max-width: 1000px;
+            margin: auto auto;
+        }
+    }
+    .post-intro-container {
+        width: 100vw;
+        height: 80vh;
+        overflow: hidden;
+
+        figure {
+            position: fixed;
+            height: 100%;
+            width: 100%; 
+        }
+
+        img {
+            height: 100%;
+            object-position: center;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
