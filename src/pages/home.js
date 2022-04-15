@@ -4,28 +4,28 @@ import { MasonryPost, PostMasonry, PostGrid } from "../components/common";
 
 
 
-const trendingConfig = {
-    1: {
-        gridArea: '1 / 2 / 3 / 3',
-    }
-}
+// const trendingConfig = {
+//     1: {
+//         gridArea: '1 / 2 / 3 / 3',
+//     }
+// }
 
-const featuredConfig = {
-    0: {
-        gridArea: '1 / 1 / 2 / 3',
-        height: '300px',
+// const featuredConfig = {
+//     0: {
+//         gridArea: '1 / 1 / 2 / 3',
+//         height: '300px',
 
-    },
-    1: {
-        height: '300px', 
-    },
-    3: {
-        height: '630px',
-        marginLeft: '30px',
-        width: '500px',
+//     },
+//     1: {
+//         height: '300px', 
+//     },
+//     3: {
+//         height: '630px',
+//         marginLeft: '30px',
+//         width: '500px',
         
-    }
-}
+//     }
+// }
 
 const mergeStyle = function (posts, config) {
     posts.forEach((post, index) => {
@@ -35,11 +35,11 @@ const mergeStyle = function (posts, config) {
     })
 }
 
-const recentPosts = [...trending, ...featured, ...featured]
+// const recentPosts = [...trending, ...featured, ...featured]
 
 
-mergeStyle(trending, trendingConfig)
-mergeStyle(featured, featuredConfig)
+// mergeStyle(trending, trendingConfig)
+// mergeStyle(featured, featuredConfig)
 
 
 const lastFeatured = featured.pop()
